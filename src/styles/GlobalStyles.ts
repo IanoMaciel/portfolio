@@ -16,4 +16,8 @@ export default createGlobalStyle`
     outline: 0;
     font-family: 'Poppins', sans-serif;
    }
+
+   button {
+    cursor: pointer;
+   }
 `;
