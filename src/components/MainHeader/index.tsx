@@ -1,9 +1,14 @@
-import { Container } from './styles';
+import { Container, Welcome, ToogleStyle } from './styles';
+
+import { Toogle } from '../Toogle';
 
 export function MainHeader() {
     return (
         <Container>
-            <h1>MainHeader</h1>
+            <Welcome>Bem vindo ao meu portfólio</Welcome>
+            <ToogleStyle>
+                <Toogle />
+            </ToogleStyle>
         </Container>
     );
 }
