@@ -1,16 +1,15 @@
-import React from "react";
-import GlobalStyles from "./styles/GlobalStyles";
+import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
 
-// views
-import About from "./views/about";
+import { Layout } from './components/layout';
 
 const App: React.FC = () => {
-        return (
-                <>
-                        <GlobalStyles />
-                        <About />
-                </>
-        );
+    return (
+        <>
+            <GlobalStyles />
+            <Layout />
+        </>
+    );
 };
 
 export default App;
