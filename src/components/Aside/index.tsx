@@ -26,17 +26,29 @@ export function Aside() {
     return (
         <Container>
             <MenuContainer>
-                <MenuLink href="/About" onClick={() => toggleMenu('About')}>
+                <MenuLink
+                    href="/About"
+                    onClick={() => toggleMenu('About')}
+                    style={clicked === 'About' ? { opacity: 1 } : { opacity: 0.7 }}
+                >
                     {clicked === 'About' ? <MdPerson /> : <MdOutlinePersonOutline />}
                     Sobre
                 </MenuLink>
 
-                <MenuLink href="/Projects" onClick={() => toggleMenu('Projects')}>
+                <MenuLink
+                    href="/Projects"
+                    onClick={() => toggleMenu('Projects')}
+                    style={clicked === 'Projects' ? { opacity: 1 } : { opacity: 0.7 }}
+                >
                     {clicked === 'Projects' ? <MdCodeOff /> : <MdCode />}
                     Projetos
                 </MenuLink>
 
-                <MenuLink href="/Lectures" onClick={() => toggleMenu('Lectures')}>
+                <MenuLink
+                    href="/Lectures"
+                    onClick={() => toggleMenu('Lectures')}
+                    style={clicked === 'Lectures' ? { opacity: 1 } : { opacity: 0.7 }}
+                >
                     {clicked === 'Lectures' ? <MdSchool /> : <MdOutlineSchool />}
                     Palestras
                 </MenuLink>
