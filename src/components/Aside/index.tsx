@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, MenuContainer, MenuLink } from './styles';
 import {
     MdPerson,
@@ -10,27 +10,34 @@ import {
 } from 'react-icons/md';
 
 export function Aside() {
-    const [clicked, setClicked] = useState('home');
+    const [clicked, setClicked] = useState(() => {
+        const currentURL = window.location.pathname.slice(1);
+        return currentURL || 'About';
+    });
 
-    const toogleMenu = (value: string) => {
+    const toggleMenu = (value: string) => {
         setClicked(value);
     };
+
+    useEffect(() => {
+        console.log(clicked);
+    }, [clicked]);
 
     return (
         <Container>
             <MenuContainer>
-                <MenuLink href="#" onClick={() => toogleMenu('home')}>
-                    {clicked == 'home' ? <MdPerson /> : <MdOutlinePersonOutline />}
+                <MenuLink href="/About" onClick={() => toggleMenu('About')}>
+                    {clicked === 'About' ? <MdPerson /> : <MdOutlinePersonOutline />}
                     Sobre
                 </MenuLink>
 
-                <MenuLink href="#" onClick={() => toogleMenu('projects')}>
-                    {clicked == 'projects' ? <MdCodeOff /> : <MdCode />}
+                <MenuLink href="/Projects" onClick={() => toggleMenu('Projects')}>
+                    {clicked === 'Projects' ? <MdCodeOff /> : <MdCode />}
                     Projetos
                 </MenuLink>
 
-                <MenuLink href="#" onClick={() => toogleMenu('palestras')}>
-                    {clicked == 'palestras' ? <MdSchool /> : <MdOutlineSchool />}
+                <MenuLink href="/Lectures" onClick={() => toggleMenu('Lectures')}>
+                    {clicked === 'Lectures' ? <MdSchool /> : <MdOutlineSchool />}
                     Palestras
                 </MenuLink>
             </MenuContainer>

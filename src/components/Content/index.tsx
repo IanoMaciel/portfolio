@@ -1,9 +1,6 @@
+//import { ReactNode } from 'react';
 import { Container } from './styles';
 
-export function Content() {
-    return (
-        <Container>
-            <h1>Content</h1>
-        </Container>
-    );
+export function Content({ children }: Children) {
+    return <Container>{children}</Container>;
 }
