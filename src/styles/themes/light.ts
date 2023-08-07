@@ -6,6 +6,8 @@ export default {
         secondary: '#333333',
         tertiary: '#FFFFFF',
 
-        gray: '#D9D9D9'
+        gray: '#D9D9D9',
+
+        button: '#D9D9D9',
     },
 }
