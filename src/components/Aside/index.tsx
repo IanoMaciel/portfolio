@@ -12,7 +12,7 @@ import {
 export function Aside() {
     const [clicked, setClicked] = useState(() => {
         const currentURL = window.location.pathname.slice(1);
-        return currentURL || 'About';
+        return currentURL || '/';
     });
 
     const toggleMenu = (value: string) => {
@@ -23,15 +23,17 @@ export function Aside() {
         console.log(clicked);
     }, [clicked]);
 
+    console.log(clicked);
+
     return (
         <Container>
             <MenuContainer>
                 <MenuLink
-                    href="/About"
-                    onClick={() => toggleMenu('About')}
-                    style={clicked === 'About' ? { opacity: 1 } : { opacity: 0.7 }}
+                    href="/"
+                    onClick={() => toggleMenu('/')}
+                    style={clicked === '/' ? { opacity: 1 } : { opacity: 0.7 }}
                 >
-                    {clicked === 'About' ? <MdPerson /> : <MdOutlinePersonOutline />}
+                    {clicked === '/' ? <MdPerson /> : <MdOutlinePersonOutline />}
                     Sobre
                 </MenuLink>
 
