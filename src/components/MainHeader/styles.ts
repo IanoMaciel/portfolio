@@ -14,7 +14,7 @@ export const Container = styled.div`
 
     flex-direction: row;
 
-    padding: 0 30px;
+    padding: 0 50px;
 `;
 
 export const Welcome = styled.h1`

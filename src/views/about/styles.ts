@@ -20,13 +20,24 @@ export const Container = styled.div`
 `;
 
 
-export const ContactContent = styled.div`
+export const Contact = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+
+    div {
+        width: 70%;
+    }
+
     p {
         margin-bottom: 30px;
     }
+
 `;
 
-export const Contact = styled.div`
+export const ContactLink = styled.div`
     display: flex;
     flex-direction: column;
 `;
@@ -40,8 +51,6 @@ export const LinkContact = styled.a`
     color: ${props => props.theme.colors.secondary};
     margin: 5px 0;
 
-
-
     transition: opacity .4s;
 
     &:hover {
@@ -52,3 +61,9 @@ export const LinkContact = styled.a`
         margin-right: 20px;
     }
 `;
+
+export const ContactImage = styled.img`
+    width: 300px;
+    height: 300px;
+`;
+
