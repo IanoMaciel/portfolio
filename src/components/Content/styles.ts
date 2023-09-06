@@ -7,7 +7,7 @@ export const Container = styled.div`
 
     background-color: ${props => props.theme.colors.tertiary};
 
-    padding: 30px;
+    padding: 30px 50px;
 
     height: calc(100vh - 70px);
     overflow-y: scroll;
