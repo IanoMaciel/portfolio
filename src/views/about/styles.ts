@@ -17,6 +17,12 @@ export const Container = styled.div`
         font-size: 20px;
         color: ${props => props.theme.colors.secondary}
     }
+
+    a {
+        text-decoration: none;
+        font-weight: 800;
+        color: ${props => props.theme.colors.secondary};
+    }
 `;
 
 
@@ -47,6 +53,7 @@ export const LinkContact = styled.a`
     align-items: center;
 
     font-size: 24px;
+    font-weight: 300;
     text-decoration: none;
     color: ${props => props.theme.colors.secondary};
     margin: 5px 0;
