@@ -1,13 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Container, MenuContainer, MenuLink } from './styles';
-import {
-    MdPerson,
-    MdOutlinePersonOutline,
-    MdCodeOff,
-    MdCode,
-    MdSchool,
-    MdOutlineSchool,
-} from 'react-icons/md';
+import { MdPerson, MdOutlinePersonOutline, MdCodeOff, MdCode } from 'react-icons/md';
 
 export function Aside() {
     const [clicked, setClicked] = useState(() => {
@@ -44,15 +37,6 @@ export function Aside() {
                 >
                     {clicked === 'Projects' ? <MdCodeOff /> : <MdCode />}
                     Projetos
-                </MenuLink>
-
-                <MenuLink
-                    href="/Lectures"
-                    onClick={() => toggleMenu('Lectures')}
-                    style={clicked === 'Lectures' ? { opacity: 1 } : { opacity: 0.7 }}
-                >
-                    {clicked === 'Lectures' ? <MdSchool /> : <MdOutlineSchool />}
-                    Palestras
                 </MenuLink>
             </MenuContainer>
         </Container>
