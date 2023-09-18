@@ -4,6 +4,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 478px;
     padding: 30px;
 
     border: 1px solid ${props => props.theme.colors.gray
@@ -12,10 +13,15 @@ export const Container = styled.div`
     background: transparent;
 
     margin-bottom: 20px;
+
+    img {
+        margin-left: 15px;
+    }
 `;
 
 export const Information = styled.div`
-    width: 60%;
+    width: 55%;
+    //background: green;
 
     h3 {
         font-size: 30px;
@@ -42,4 +48,13 @@ export const Information = styled.div`
 
         border-radius: 15px;
     }
+`;
+
+export const ImageProject = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    //  background: blueviolet;
 `;
