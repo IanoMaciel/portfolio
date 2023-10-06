@@ -17,7 +17,7 @@ export const Container = styled.div`
     }
 `;
 
-export const ToogleSelector = styled(Switch).attrs<ReactSwitchProps>(
+export const ToggleSelector = styled(Switch).attrs<ReactSwitchProps>(
     ({ theme }) => ({
         onColor: theme.colors.secondary,
         offColor: theme.colors.secondary,
