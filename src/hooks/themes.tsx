@@ -22,11 +22,23 @@ interface IThemeContext {
 const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
 
 export function ThemeProvider({ children }: Children) {
-    const [theme, setTheme] = useState<ITheme>(dark);
+    const [theme, setTheme] = useState<ITheme>(() => {
+        const themeSaved = localStorage.getItem('@my-portfolio:theme');
+        if (themeSaved) {
+            return JSON.parse(themeSaved);
+        } else {
+            return dark;
+        }
+    });
 
     const toggleTheme = () => {
-        if (theme.title === 'dark') setTheme(light);
-        else setTheme(dark);
+        if (theme.title === 'dark') {
+            setTheme(light);
+            localStorage.setItem('@my-portfolio:theme', JSON.stringify(light));
+        } else {
+            setTheme(dark);
+            localStorage.setItem('@my-portfolio:theme', JSON.stringify(dark));
+        }
     };
     return <ThemeContext.Provider value={{ toggleTheme, theme }}>{children}</ThemeContext.Provider>;
 }
