@@ -20,4 +20,12 @@ export const Container = styled.div`
         background-color: ${props => props.theme.colors.tertiary};
         border-radius: 4px; /* Borda arredondada da alça */
     }
+
+    @media (max-width: 1024px) {
+        padding: 70px 50px;
+    }
+
+    @media (max-width: 428px) {
+        padding: 70px 20px;
+    }
 `;

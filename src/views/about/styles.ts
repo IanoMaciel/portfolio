@@ -1,6 +1,16 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
+    @media (max-width: 428px) {
+
+        > div > h1 {
+            font-size: 30px;
+        }
+
+        > div > span {
+            font-size: 12px;
+        }
+    }
 `;
 
 export const AboutMe = styled.div`
@@ -31,6 +41,13 @@ export const AboutContent = styled.div`
         color: ${props => props.theme.colors.primary};
         font-weight: 400;
     }
+
+    @media (max-width: 428px) {
+
+        p, a {
+            font-size: 12px;
+        }
+    }
 `;
 
 export const Contact = styled.div`
@@ -60,7 +77,13 @@ export const ContactLink = styled.div`
     flex-direction: column;
     width: 50%;
 
-    //background-color: red; // DELETE HERE
+    @media (max-width: 428px) {
+        width: 100%;
+
+        a {
+            font-size: 12px
+        }
+    }
 `;
 
 export const LinkContact = styled.a`
@@ -91,14 +114,18 @@ export const ProfilePhoto = styled.div`
     position: relative;
     width: 50%;
 
-    //background-color: blue;
-
     img {
         position: absolute;
         margin-top: -60px;
         margin-left: 200px;
         width: 300px;
         height: 300px;
+    }
+
+    @media (max-width: 428px) {
+        img {
+            display: none;
+        }
     }
 `;
 
