@@ -1,6 +1,10 @@
-//import { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { Container } from './styles';
 
-export function Content({ children }: Children) {
+interface IContectProps {
+    children: ReactNode;
+}
+
+export function Content({ children }: IContectProps) {
     return <Container>{children}</Container>;
 }
