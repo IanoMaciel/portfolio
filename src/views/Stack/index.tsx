@@ -1,3 +1,10 @@
+import { Container } from './styles';
+
 export default function Stack() {
-    return <h1>Tech Stack</h1>;
+    return (
+        <Container>
+            <h1>Tech Stack</h1>
+            <span>Em breve estará disponível...</span>
+        </Container>
+    );
 }

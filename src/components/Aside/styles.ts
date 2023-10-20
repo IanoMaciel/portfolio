@@ -5,8 +5,7 @@ export const Container = styled.div`
 
     color: ${props => props.theme.colors.primary};
 
-    background-color: ${props => props.theme.colors.tertiary};
-    border-right: 1px solid ${props => props.theme.colors.gray};
+    background-color: ${props => props.theme.colors.tertiary_50};
 
     display: flex;
     justify-content: center;
