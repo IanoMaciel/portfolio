@@ -1,11 +1,15 @@
-import { Container } from './styles';
+import { Container, ProjectTitle } from './styles';
 import { Card } from '../../components/Card';
 import { repository } from '../../data/repositorie';
 
 export default function Projects() {
     return (
         <Container>
-            <h1>Projetos</h1>
+            <ProjectTitle>
+                <h1>Projetos</h1>
+                <span>Projetos desenvolvidos individualmente e em conjunto com outros devs</span>
+            </ProjectTitle>
+
             {repository.map(data => (
                 <Card
                     key={data.id}

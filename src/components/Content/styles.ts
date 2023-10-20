@@ -7,9 +7,9 @@ export const Container = styled.div`
 
     background-color: ${props => props.theme.colors.tertiary};
 
-    padding: 30px 30px;
+    padding: 70px 200px;
 
-    height: calc(100vh - 70px);
+    height: calc(100vh);
     overflow-y: scroll;
 
     ::-webkit-scrollbar {
@@ -19,5 +19,13 @@ export const Container = styled.div`
     ::-webkit-scrollbar-thumb {
         background-color: ${props => props.theme.colors.tertiary};
         border-radius: 4px; /* Borda arredondada da alça */
+    }
+
+    @media (max-width: 1024px) {
+        padding: 70px 50px;
+    }
+
+    @media (max-width: 428px) {
+        padding: 70px 20px;
     }
 `;

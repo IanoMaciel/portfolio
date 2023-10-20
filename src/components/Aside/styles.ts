@@ -16,7 +16,9 @@ export const Container = styled.div`
 export const MenuContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0;
 
     width: 80%;
 `;
@@ -24,7 +26,10 @@ export const MenuContainer = styled.div`
 
 export const MenuLink = styled.a`
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
 
     color: ${props => props.theme.colors.primary};
     text-decoration: none;
@@ -32,14 +37,37 @@ export const MenuLink = styled.a`
     margin: 10px 0;
     padding: 10px;
 
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 300;
 
     transition: opacity .3s;
 
     svg {
-        margin-right: 20px;
+        margin-bottom: 4px;
         font-size: 24px;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+`;
+
+export const ButtonTheme = styled.button`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: transparent;
+
+    span {
+        color: ${props => props.theme.colors.secondary};
+        font-size: 12px;
+    }
+
+    svg {
+        margin-bottom: 4px;
+        font-size: 24px;
+        color: ${props => props.theme.colors.secondary}
     }
 
     &:hover {
