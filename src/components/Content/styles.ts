@@ -5,7 +5,7 @@ export const Container = styled.div`
 
     color: ${props => props.theme.colors.primary};
 
-    background-color: ${props => props.theme.colors.tertiary};
+    background-color: ${props => props.theme.colors.tertiary_100};
 
     padding: 70px 200px;
 
@@ -17,7 +17,7 @@ export const Container = styled.div`
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: ${props => props.theme.colors.tertiary};
+        background-color: ${props => props.theme.colors.tertiary_100};
         border-radius: 4px; /* Borda arredondada da alça */
     }
 
