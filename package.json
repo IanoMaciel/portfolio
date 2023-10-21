@@ -30,7 +30,6 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts"
   },
-  "homepage": "https://IanoMaciel.github.io/portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
