@@ -23,4 +23,15 @@ export const Container = styled.div`
             color: ${props => props.theme.colors.primary};
         }
     }
+
+    @media (max-width: 430px) {
+
+        a > svg {
+            font-size: 30px;
+        }
+
+        a {
+            margin-left: 15px;
+        }
+    }
 `;
