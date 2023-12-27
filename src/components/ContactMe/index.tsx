@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 import { AiFillInstagram } from 'react-icons/ai';
 import { MdEmail } from "react-icons/md";
 
@@ -18,6 +18,10 @@ export default function ContactMe() {
 
             <a href="https://www.instagram.com/ianooo_/" target="_blank">
                 <AiFillInstagram />
+            </a>
+
+            <a href="https://wa.me/5592986338449" target="_blank">
+                <FaWhatsappSquare />
             </a>
 
             <a href="mailto:ianomaciel685@icloud.com?subject=sbject text">

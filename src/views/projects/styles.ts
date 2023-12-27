@@ -18,7 +18,7 @@ export const ProjectTitle = styled.div`
         color: ${props => props.theme.colors.secondary}
     }
 
-    @media (max-width: 428px) {
+    @media (max-width: 430px) {
 
         h1 {
             font-size: 30px;

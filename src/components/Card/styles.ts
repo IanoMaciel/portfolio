@@ -46,7 +46,7 @@ export const Information = styled.div`
         width: 100%;
     }
 
-    @media (max-width: 428px) {
+    @media (max-width: 430px) {
 
         h3 {
             font-size: 16px;

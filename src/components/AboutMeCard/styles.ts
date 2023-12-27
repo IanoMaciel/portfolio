@@ -7,6 +7,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     padding: 10px 27px;
+
+    @media (max-width: 430px) {
+        > div > p {
+            font-size: 12px;
+        }
+    }
 `
 
 export const Contant = styled.div`
@@ -26,6 +32,10 @@ export const Contant = styled.div`
         font-weight: 400;
     }
 
+    @media (max-width: 430px) {
+        width: 100%;
+    }
+
 `
 export const Profile = styled.div`
     width: 40%;
@@ -33,4 +43,8 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 430px) {
+        display: none;
+    }
 `
