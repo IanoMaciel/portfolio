@@ -20,11 +20,7 @@ export default function ContactMe() {
                 <AiFillInstagram />
             </a>
 
-<<<<<<< HEAD
             <a href="https://wa.me/5592986338449">
-=======
-            <a href="https://wa.me/5592986338449" target="_blank">
->>>>>>> develop
                 <FaWhatsappSquare />
             </a>
 
