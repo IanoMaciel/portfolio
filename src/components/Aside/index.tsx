@@ -10,7 +10,7 @@ import {
     MdSunny,
 } from 'react-icons/md';
 
-import { PiStackLight, PiStackFill } from 'react-icons/pi';
+//import { PiStackLight, PiStackFill } from 'react-icons/pi';
 
 export function Aside() {
     const [clicked, setClicked] = useState(() => {
@@ -58,14 +58,14 @@ export function Aside() {
                         Projetos
                     </MenuLink>
 
-                    <MenuLink
+                    {/* <MenuLink
                         href="/Stack"
                         onClick={() => toggleMenu('Stack')}
                         style={clicked === 'Stack' ? { opacity: 1 } : { opacity: 0.7 }}
                     >
                         {clicked === 'Stack' ? <PiStackFill /> : <PiStackLight />}
                         Stack
-                    </MenuLink>
+                    </MenuLink> */}
                 </div>
                 <ButtonTheme onClick={handleChangeTheme}>
                     {icon === true ? <MdSunny /> : <MdNightlightRound />}
