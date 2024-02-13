@@ -1,28 +1,32 @@
-import { Container, Information, ImageProject } from './styles';
+import * as S from './styles';
+import { SiGithub } from "react-icons/si";
 
 interface ICardRequest {
+    development: string;
     title: string;
     description: string;
-    tech: string;
     link: string;
     urlImage: string;
 }
 
-export function Card({ title, description, tech, link, urlImage }: ICardRequest) {
+export function Card({ development, title, description, link, urlImage }: ICardRequest) {
     return (
-        <Container>
-            <Information>
-                <h3>{title}</h3>
+        <S.Container>
+            <S.Title>
+                <h2>{development}</h2>
+                <h1>{title}</h1>
                 <p>{description}</p>
-                <p>{tech}</p>
-                <a href={link} target="_blank">
-                    Acesse o repositório aqui
-                </a>
-            </Information>
+            </S.Title>
 
-            <ImageProject>
-                <img src={urlImage} alt="image" />
-            </ImageProject>
-        </Container>
+            <S.Image>
+                <img src={urlImage} />
+            </S.Image>
+
+
+
+            <S.Link href={link} target="_blanck">
+                <SiGithub />Repositório
+            </S.Link>
+        </S.Container>
     );
 }

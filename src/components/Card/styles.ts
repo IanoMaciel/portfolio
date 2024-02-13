@@ -1,75 +1,64 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-
-    border: 1px solid ${props => props.theme.colors.gray};
-    border-radius: 6px;
-    background: transparent;
-
-    margin-bottom: 20px;
+    width: 583px;
+    padding: 20px;
+    background-color: ${props => props.theme.colors.tertiary_50};
+    margin-bottom: 50px;
 `;
 
-export const Information = styled.div`
-    width: 47%;
+export const Image = styled.div`
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 
-    h3 {
-        font-size: 20px;
-        font-weight: 800;
-        color: ${props => props.theme.colors.primary};
+    img {
+        width: 400px;
+        height: 300px;
+    }
+`;
+
+export const Title = styled.div`
+    font-size: 16px;
+
+    h2 {
+        font-weight: 300;
+        color: ${props => props.theme.colors.secondary};
+    }
+
+    h1 {
+        font-weight: 700;
+        margin: 18px 0;
     }
 
     p {
+        font-weight: 300;
         color: ${props => props.theme.colors.secondary};
-        font-weight: 200;
-        font-size: 20px;
-        margin: 15px 0;
-    }
-
-    a {
-        color: ${props => props.theme.colors.primary};
-        font-size: 20px;
-        font-weight: 200;
-        text-decoration: none;
-
-        padding: 5px 10px;
-        background-color: ${props => props.theme.colors.button};
-
-        border-radius: 15px;
-    }
-
-    @media (max-width: 1024px) {
-        width: 100%;
-    }
-
-    @media (max-width: 430px) {
-
-        h3 {
-            font-size: 16px;
-        }
-
-        p {
-            font-size: 12px;
-        }
-
-        a {
-            font-size: 12px;
-        }
     }
 `;
 
-export const ImageProject = styled.div`
+export const Link = styled.a`
+    border: 1px solid ${props => props.theme.colors.secondary};
+    padding: 10px 16px;
+    font-size: 16px;
+    color: ${props => props.theme.colors.secondary};
+    text-decoration: none;
+
+    width: 156px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 50%;
+    svg {
+        font-size: 24px;
+        margin-right: 10px;
+    }
 
-    @media (max-width: 1024px) {
-        display: none;
+    transition: .3s;
+
+    &:hover {
+        background: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.tertiary_50};
     }
 `;
