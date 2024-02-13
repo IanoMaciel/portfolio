@@ -5,6 +5,28 @@ export const Container = styled.div`
     padding: 20px;
     background-color: ${props => props.theme.colors.tertiary_50};
     margin-bottom: 50px;
+
+    @media (max-width: 430px) {
+        img {
+            display: none;
+        }
+
+        p,a {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        svg {
+            font-size: 24px;
+        }
+    }
 `;
 
 export const Image = styled.div`

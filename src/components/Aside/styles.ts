@@ -9,6 +9,12 @@ export const Container = styled.div`
 
     display: flex;
     justify-content: center;
+
+    @media (max-width: 430px) {
+        a {
+            font-size: 12px;
+        }
+    }
 `;
 
 

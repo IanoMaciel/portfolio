@@ -7,7 +7,7 @@ export default function Projects() {
         <Container>
             <ProjectTitle>
                 <h1>Projetos</h1>
-                <span>Projetos desenvolvidos individualmente e em conjunto com outros devs</span>
+                <span>Projetos desenvolvidos individualmente e em conjunto com outros desenvolvedores.</span>
             </ProjectTitle>
             <Content>
                 {

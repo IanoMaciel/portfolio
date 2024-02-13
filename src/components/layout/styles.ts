@@ -9,4 +9,8 @@ export const Container = styled.div`
     grid-template-areas: 'AS CT''AS CT';
 
     height: 100vh;
+
+    @media (max-width: 430px) {
+        grid-template-columns: 55px auto;
+    }
 `;
