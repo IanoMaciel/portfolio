@@ -12,7 +12,7 @@ export interface IData {
 export const repository: IData[] = [
     {
         id: uuidv4(),
-        development: 'FRON END',
+        development: 'FRONT END',
         title: 'Minha Carteira',
         description: 'Sistema web que monitora as entradas e saídas de dinheiro do usuário, fornecendo um dashboard para melhor visualização dos dados. O objetivo deste é simular uma carteira real, permitindo que o usuário visualize facilmente seus ganhos e saídas.',
         imageURL: require('../assets/imageMyWallet.png'),
@@ -29,7 +29,7 @@ export const repository: IData[] = [
     {
         id: uuidv4(),
         title: 'Uni+',
-        development: 'FRON END',
+        development: 'FRONT END',
         description: 'A proposta deste produto é oferecer uma solução para submeter horas relacionadas às Atividades Acadêmicas, Científicas e Culturais (AACC), facilitando o envio de documentos, além de permitir ao aluno consultar qual modalidade ele precisa concluir para o preenchimento de suas horas.',
         imageURL: require('../assets/imageUni.png'),
         repositoryURL: 'https://github.com/IanoMaciel/front-end-aacc'
