@@ -12,7 +12,7 @@ export default function About() {
         <Container>
             <AboutMe>
                 <h1>Iano Maciel</h1>
-                <span>Engenheiro de Software | Desenvolvedor de Software | Pesquisador</span>
+                <span>Engenheiro de Software | Desenvolvedor de Software | Mestrando em Engenharia de Software</span>
             </AboutMe>
             <AboutMeCard />
             <ContactMe/>
