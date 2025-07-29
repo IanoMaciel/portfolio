@@ -1,4 +1,3 @@
-// styles.ts
 import styled, { keyframes, css } from "styled-components";
 
 const decorativeRotate = keyframes`
@@ -7,17 +6,6 @@ const decorativeRotate = keyframes`
     }
     to {
         transform: rotate(360deg);
-    }
-`;
-
-const fadeInScale = keyframes`
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
     }
 `;
 
