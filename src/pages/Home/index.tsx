@@ -1,5 +1,9 @@
-import { CodeIcon, GithubLogoIcon, InstagramLogoIcon, LinkedinLogoIcon, PaperPlaneTiltIcon, WhatsappLogoIcon } from "@phosphor-icons/react";
 import * as S from "./styles";
+import {
+    CodeIcon, GithubLogoIcon, InstagramLogoIcon,
+    LinkedinLogoIcon, PaperPlaneTiltIcon, WhatsappLogoIcon
+} from "@phosphor-icons/react";
+import profile from "../../assets/profile.svg";
 
 export default function Home() {
     return (
@@ -27,7 +31,9 @@ export default function Home() {
                 </S.Action>
             </S.Information>
             <S.ContentProfile>
-                <S.Profile src="https://www.logo.wine/a/logo/Laravel/Laravel-Logo.wine.svg" />
+                <S.Profile src={profile} />
+                <S.DecorativeCircle $variant="primary" />
+                <S.DecorativeCircle $variant="secondary" />
             </S.ContentProfile>
         </S.Container>
     );
