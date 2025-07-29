@@ -1,37 +1,6 @@
 // styles.ts
 import styled, { keyframes, css } from "styled-components";
 
-// Animações
-const particleFloat = keyframes`
-    0%, 100% {
-        transform: translateY(0px) translateX(0px) scale(1);
-        opacity: 0.7;
-    }
-    25% {
-        transform: translateY(-40px) translateX(15px) scale(1.1);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(-15px) translateX(-20px) scale(0.9);
-        opacity: 0.8;
-    }
-    75% {
-        transform: translateY(-50px) translateX(8px) scale(1.2);
-        opacity: 0.9;
-    }
-`;
-
-const glowPulse = keyframes`
-    0%, 100% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.6;
-        transform: scale(1.1);
-    }
-`;
-
 const decorativeRotate = keyframes`
     from {
         transform: rotate(0deg);
