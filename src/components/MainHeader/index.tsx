@@ -9,7 +9,7 @@ export function MainHeader() {
         <S.Link href="#home">Início</S.Link>
         <S.Link href="#aboutme">Sobre Mim</S.Link>
         <S.Link href="#projects">Projetos</S.Link>
-        <S.Link href="#projects">Contato</S.Link>
+        <S.Link href="#contact">Contato</S.Link>
       </S.Nav>
 
       <S.ButtonChangeLanguage>EN</S.ButtonChangeLanguage>
