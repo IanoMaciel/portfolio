@@ -68,7 +68,7 @@ export function MainHeader() {
           onClick={() => setActiveSection('contact')}
           className={activeSection === 'contact' ? 'active' : ''}
         >
-          Projetos
+          Contato
         </S.Link>
       </S.Nav>
 

@@ -49,7 +49,12 @@ export const Title = styled.h3`
 export const Subtitle = styled.h1`
     font-weight: 500;
     font-size: 40px;
-    color: ${(props) => props.theme.colors.white};
+
+    background: linear-gradient(to right, #ffffff, #888888); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;
+
 
     @media (max-width: 768px) {
         font-size: 28px;

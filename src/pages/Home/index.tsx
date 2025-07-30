@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import {
-    CodeIcon, GithubLogoIcon, InstagramLogoIcon,
-    LinkedinLogoIcon, PaperPlaneTiltIcon, WhatsappLogoIcon
+    CodeIcon, FileCloudIcon, GithubLogoIcon, 
+    InstagramLogoIcon, LinkedinLogoIcon, WhatsappLogoIcon
 } from "@phosphor-icons/react";
 import profile from "../../assets/profile.svg";
 
@@ -20,9 +20,9 @@ export default function Home() {
                     <S.LinkSocial href="#"><WhatsappLogoIcon size={24} weight="fill" /></S.LinkSocial>
                 </S.Social>
                 <S.Action>
-                    <S.LinkContact href="#contact">
-                        <PaperPlaneTiltIcon size={24} />
-                        Entre em contato
+                    <S.LinkContact href="#">
+                        <FileCloudIcon size={24} />
+                        Currículo
                     </S.LinkContact>
                     <S.LinkProject href="#project">
                         <CodeIcon size={24} />

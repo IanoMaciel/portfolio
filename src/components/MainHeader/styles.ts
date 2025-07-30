@@ -25,7 +25,7 @@ export const Nav = styled.nav<NavProps>`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    background: #333333;
+    background: ${(props) => props.theme.colors.tertiary};
     width: 100%;
     position: absolute;
     top: 100%;
