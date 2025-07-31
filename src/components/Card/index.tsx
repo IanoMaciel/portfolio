@@ -1,40 +1,45 @@
 import { GithubLogoIcon } from "@phosphor-icons/react";
 import * as S from "./styles";
 
-// interface ICardProps {
-//   type: string;
-//   year: string;
-//   title: string;
-//   description: string;
-//   skill: [];
-//   link: string;
-// }
+interface ICardProps {
+  type: string;
+  year: string;
+  title: string;
+  description: string;
+  skills: string[];
+  repositoryLink: string;
+}
 
-export default function Card() {
+export default function Card({
+  type,
+  year,
+  title,
+  description,
+  skills,
+  repositoryLink
+}: ICardProps) {
   return (
     <S.Container>
       <S.ContentColumn>
         <S.ContentLine>
-          <S.Type>API REST</S.Type>
-          <S.Date>2025</S.Date>
+          <S.Type>{type}</S.Type>
+          <S.Date>{year}</S.Date>
         </S.ContentLine>
 
-        <S.Title>Role Player</S.Title>
-        <S.Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </S.Description>
+        <S.Title>{title}</S.Title>
+        <S.Description>{description}</S.Description>
 
-        <div style={{ display: "flex", gap: "10px" }}>
-          <S.Chips>PHP</S.Chips>
-          <S.Chips>Laravel</S.Chips>
-          <S.Chips>MySQL</S.Chips>
-        </div>
+        <S.SkillsContainer>
+          {skills.map((skill, index) => (
+            <S.Chip key={index}>{skill}</S.Chip>
+          ))}
+        </S.SkillsContainer>
       </S.ContentColumn>
 
-      <S.Link href="#">
+      <S.RepositoryLink href={repositoryLink} target="_blank" rel="noopener noreferrer">
         <GithubLogoIcon size={20} weight="fill" />
         Repositório
-      </S.Link>
+      </S.RepositoryLink>
     </S.Container>
   );
 }
